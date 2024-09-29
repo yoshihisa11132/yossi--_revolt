@@ -1,5 +1,5 @@
 services:
- - name: yossi-bot
+ - name: yossi-kun
    plan: free
    type: web
    runtime: node
