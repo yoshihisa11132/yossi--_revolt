@@ -77,7 +77,7 @@ client.on("messageCreate", async (message) => {
             message.channel.sendMessage("もらい腹減り\n腹減った");
             break;
         case "y.ping":
-            message.channel.sendMessage("RevoltにはPingないよ！でも卓球の球を返すことはできるで！\nPong!:ping_pong:");
+            message.channel.sendMessage("RevoltにはPingないよ！卓球の球を打ち返すこと？うち人間じゃないんだけど！");
             break;
         case yossi1113_id.split(" ")[0]:
             message.channel.sendMessage(bot_mention_id);
