@@ -1,5 +1,5 @@
 services:
- - name: engekiws
+ - name: yossi-bot
    plan: free
    type: web
    runtime: node
