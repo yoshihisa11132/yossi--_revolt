@@ -135,7 +135,7 @@ client.on("messageCreate", async (message) => {
             break;
         case "yossi-来い":
             var newmessage = "";
-            for (let i=0;i<=59;i++){ // 節度を持って
+            for (let i=0;i<=0;i++){ // 節度を持って
                 newmessage += yossi1113_id + " ";
             }
             message.channel.sendMessage(newmessage);
