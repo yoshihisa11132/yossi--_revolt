@@ -1,5 +1,5 @@
 const bot_token = process.env.bot_token || "not set"
-const bot_mention_id = "<@01J8XHRMMX3H07YHKWX581PDPK> "; //変えてね
+const bot_mention_id = "<@01HH8QGS8J310TYS1DAR99K0HT> "; //変えてね
 const yossi1113_id = "<@01HEHV39TDJ2SZZCWT7R5JEJK9> "; //変えてね
 if (bot_token == "not set"){
     console.error("なんかトークン入ってないんやが...");
@@ -15,7 +15,7 @@ const server = http.createServer((request, response) => {
     response.writeHead(200, {
       "Content-Type": "text/html"
     });
-    const responseMessage = "<h1>yossi-bot</h1>";
+    const responseMessage = "<h1>yossi-bot</h1><br><p>起動しますた</p>";
     response.end(responseMessage);
 });
 // ここまで
@@ -55,10 +55,10 @@ client.on("messageCreate", async (message) => {
             message.channel.sendMessage("こんばんわ！");
             break;
         case "所詮BOT":
-            message.channel.sendMessage("||# ふざけんな||");
+            message.channel.sendMessage("!!# ふざけんな!!");
             break;
         case "y.help":
-            message.channel.sendMessage("いまhelpは作り途中なの"); // いい加減作れ
+            message.channel.sendMessage("!!そのうち作ります!!"); // いい加減作れ
             break;
         case bot_mention_id.split(" ")[0]:
             message.channel.sendMessage("呼んだ？");
@@ -74,10 +74,10 @@ client.on("messageCreate", async (message) => {
                 !!ただしJF6DEUの手によってrevoltへ移植された模様!!");
                 break;
         case "お腹すいた":
-            message.channel.sendMessage("うぅなんか食べたいよー");
+            message.channel.sendMessage("もらい腹減り\n腹減った");
             break;
         case "y.ping":
-            message.channel.sendMessage("RevoltにはPingないよ！");
+            message.channel.sendMessage("RevoltにはPingないよ！でも卓球の球を返すことはできるで！\nPong!:ping_pong:");
             break;
         case yossi1113_id.split(" ")[0]:
             message.channel.sendMessage(bot_mention_id);
@@ -113,13 +113,13 @@ client.on("messageCreate", async (message) => {
             message.channel.sendMessage("ご、ごめんなさい.....");
             break;
         case "死ねよ":
-            message.channel.sendMessage("おめえのほうが死ねよこのクソガキが！");
+            message.channel.sendMessage("おめえのほうが死ねよこのクソガキが！ !!あ、感情的になってもうた.....!!");
             break;
         case "黙れよ":
-            message.channel.sendMessage("人に指示できるくらいだったら死んだほうがいいと思うが");
+            message.channel.sendMessage("人に指示できるくらいだったら死んだほうがいいと思うが!!また感情的に...!!");
             break;
         case "fackyou":
-            message.channel.sendMessage("ガキは死ね！||...||");
+            message.channel.sendMessage("ガキは死ね！!!...!!");
             break;
         case "モアイおいしい":
             message.channel.sendMessage("/kick <@"+message.authorId+"> Receivedうわぁmessage");
@@ -131,7 +131,7 @@ client.on("messageCreate", async (message) => {
             message.channel.sendMessage("ヒィッ");
             break;
         case "y.say":
-            message.channel.sendMessage("この項目は制作中です。"); // めんどくさいんだって...
+            message.channel.sendMessage("悲しいかもしれないお知らせです、廃止です。Discord版使おう"); // めんどくさいんだって...
             break;
         case "yossi-来い":
             var newmessage = "";
@@ -141,10 +141,11 @@ client.on("messageCreate", async (message) => {
             message.channel.sendMessage(newmessage);
             break;
         case "グサッ":
-            message.channel.sendMessage("うっ......");
-            break;
+            message.channel.sendMessage("うっ......");//process.exit(1);使うと止まる
+            //メッセージが送られなくなるかも
+            break;//終了させたくないときはbreak;を使うこと
         case "yossi-殺したい":
-            message.channel.sendMessage("...||いつ殺そう....ともかくナイフを持ってることは隠さなきゃ||");
+            message.channel.sendMessage("...!!いつ殺そう....ともかくナイフを持ってることは隠さなきゃ!!");
             break;
         case "なぜ戦争が生まれるんだ":
             message.channel.sendMessage("https://open.spotify.com/intl-ja/track/6I1zXhn2bLukkB6JxZ8P61\nとりまみんなこれ聞け");
