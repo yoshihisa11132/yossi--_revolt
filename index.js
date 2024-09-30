@@ -36,7 +36,7 @@ client.on("messageCreate", async (message) => {
         case "落ち":
             message.channel.sendMessage("ok!");
             break;
-        case "草":
+        //case "草":// 最初の//を抜くと動く
             message.channel.sendMessage("草wwww");
             break;
         case "おはよう":
@@ -155,6 +155,9 @@ client.on("messageCreate", async (message) => {
             break;
         case "y.supura":
             message.channel.sendMessage("<@01J4349RNGFXW60H7P2X293S9V>,<@01HBZMX51NG1EAW92EPA1NCXTF>,<@01H8TZYY16Y79KERHFFMC6JKW7>,<@01HW55TC5YS7H4N1KEA305SWKX>,<@01HBT82SPDMQ8FK496M387MAHZ>,<@01HMHX8X7J1RV2ZGHCFE46NFMF>,<@01HB30SVM7R89QJQA8CMA7CEC2>,<@01HW55TC5YS7H4N1KEA305SWKX>,<@01HG0CQEK0PNJJ07TWHBAX4JSS><@01H413PJC09DJ4MA52DE2J4WR4>,<@01HM3A56YXC4E984CCPP6GYBQF>");
+            break;
+        case "スクチャ":
+            message.channel.sendMessage("[]()スクチャ民死ね");
             break;
        default:
             break;
